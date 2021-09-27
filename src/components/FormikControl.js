@@ -1,11 +1,12 @@
 import React from 'react';
+import Input from './Input';
 
 function FormikControl(props) {
-    const { control } = props
+    const { control, ...rest } = props
 
     switch(control) {
         case 'input':
-            return null;
+            return <Input {...rest} />;
         case 'textarea':
             return null;
         case 'select':
@@ -19,12 +20,6 @@ function FormikControl(props) {
         default:
             return null;
     }
-
-    return (
-        <div>
-
-        </div>
-    );
 };
 
 export default FormikControl;
