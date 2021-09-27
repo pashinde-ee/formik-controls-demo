@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import FormikContainer from './components/formikContainer';
 
 function App() {
   return (
     <div className="App">
-      <h3>ASDf</h3>
+      <FormikContainer />
     </div>
   );
 }
