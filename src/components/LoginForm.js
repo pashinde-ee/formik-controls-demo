@@ -1,9 +1,9 @@
 import React from 'react';
 import * as Yup from 'yup';
-import { Rormik, Form, Formik } from 'formik';
+import { Form, Formik } from 'formik';
 import FormikControl from './FormikControl';
 
-const LoginForm = (props) => {
+const LoginForm = () => {
     const initialValues = {
         email: "",
         password: ""
